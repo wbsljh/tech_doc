@@ -27,7 +27,12 @@
 
 ### 大数据可视化平台研发
 
+政务大数据大屏展示需求一般采用图表，图文等方式表达， 对视觉效果、响应速度、需求交互效率要求都及高。 以往采用手工编码的方式一个大屏开发需要5人花2天， 甚至通宵加班才能完成。 并且大屏需求交互时间要求一般比较急， 且很频繁。 
 
+为了解决这一问题， 我负责开发数据可视化平台的研发工作，通过可视化平台，可以在系统上通过配置即可完成大屏或其他数据分析页面的开发。
+
+为了不重复造轮子， 经过调研选择了开源的可视化框架superset作为基础进行拓展，集成了echart，实现一套机制封装自定义html组件，及html模板。可视化平台后台采用python flask sqlalchemy numpy pandas框架。前端用es6 reactjs
+    经过2个月时间完成了平台第一个版本开发， 并且投入生产使用， 通过可视化平台配置原先需要5人2天的工作， 现只需要1人1天的配置（前提是相关数据已准备好）
 
 ### 信用评价系统指标计算框架
 
@@ -56,33 +61,46 @@
 
 ## 厦门多快好省网络科技有限公司 （ 2014年3月 ~ 2015年12月 ）
 
-### MNO项目 
-我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
+### 谁牛金融APP
 
+负责多快好省旗下随牛社区金融平台数据及服务端的架构研发及管理工作，我负责架构技术选型，及业务功能逻辑设计，数据模型设计，任务编排，及API开发 平台架构。
 
-### PQR项目 
-我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
+服务端整体技术如下： 
 
+- 数据存储：oss统一存储媒体文件数据， mysql核心业务数据（事物），mongodb存储股票公告，资讯等信息（数据量大 实时读 离线写）， redis存储高频访问的股票行情分时图，K线图，及其他缓存数据（session等） 
 
-### 其他项目
+-web应用：Python Django\Django-REST-Framework\Celery(异步框架) 数据计算：Luigi(数据计算框架， 处理任务依赖关系，监控等)
+ 
+## 福州顶点软件 （ 2010年2月 ~ 2014年4月 ）
 
-（每个公司写2~3个核心项目就好了，如果你有非常大量的项目，那么按分类进行合并，每一类选一个典型写出来。其他的一笔带过即可。）
+### 证券公司CRM系统
 
----
+顶点软件主要致力于为金融证券、企业、教育及公共服务业提供以业务流程管理（BPM）为核心的信息化解决方案。在证券期货行业，公司已成长为领先的全业务解决方案供应商。
 
-# 开源项目和作品
-（这一段用于放置工作以外的、可证明你的能力的材料）
+担任现场项目经理， 先后参与承建了英大证券、国海证券、联讯证券、财通证券、浙商证券、财富证券、中信证券营销服务综合管理系统。
+
+其中比较有代表性的是中信证券， 该项目的目标是用顶点CRM系统替换已经运行6年多的金正股份CRM系统， 并向2大子公司推广。该项目面临2大挑战： 
+
+1、替换已经运行6年的第三方的系统 
+
+2、集团大型系统， 组织架构复杂， 要灵活考虑子公司个性化需求，在任期间完成了第一阶段母公司系统上线， 并正常运行3个月。
+
+## 国网信通亿力吉奥有限公司 （ 2007年7月 ~ 2010年2月 ）
+
+### 电业局车辆调度系统
+
+参与电网生产管理系统（简称GPMS）开发，在GPMS平台上担任以下几个模块的负责人：车辆调度管理系统、现场车辆位置信息实时查询系统、输电设施可靠性分析与运维成本管理系统。 
+
+主要工作： 
+
+1、与客户沟通需求，独立进行模块开发，用到的技术有ORCLE、JAVA(spring mvc  spring  mybatis hibernate)、Flex, Jquery, BootStrap 
+
+2、到客户现场实施及验收。
+
 
 ## 开源项目
 
- - [STU](http://github.com/yourname/projectname)：项目的简要说明，Star和Fork数多的可以注明
- - [WXYZ](http://github.com/yourname/projectname)：项目的简要说明，Star和Fork数多的可以注明
-
-## 技术文章
-（挑选你写作或翻译的技术文章，好的文章可以从侧面证实你的表达和沟通能力，也帮助招聘方更了解你）
-
-- [一个产品经理眼中的云计算：前生今世和未来](http://get.jobdeer.com/706.get)
-- [来自HeroKu的HTTP API 设计指南(翻译文章)](http://get.jobdeer.com/343.get) （ ```好的翻译文章可以侧证你对英文技术文档的阅读能力```）
+ - [STU](http://github.com/wbsljh/projectname)：项目的简要说明，Star和Fork数多的可以注明
 
 # 技能清单
 
@@ -91,132 +109,14 @@
 - Web开发：Java/Python/
 - Web框架：Spring MVC/Spring Boot/Django/Flask/
 - ORM框架：Hibernate/Mybatis/SqlAlchemy/
+- 工具：Git/Maven/Docker
 - 前端框架：Bootstrap/ES6/HTML5/ReactJs/VueJS
 - 前端工具：WebPack
+- 中间件：Zookeeper, Kafka, ActiveMq
 - 数据库相关：MySQL/PgSQL/Oracle/Mongodb/Hbase
 - 版本管理、文档和自动化部署工具：Svn/Git/
 - 单元测试：Junit
 - 云和开放平台：SAE/BAE/AWS/微博开放平台/微信应用开发
-
-## 参考技能关键字
-
-本技能关键字列表是从最近招聘架构师的数百份JD中统计出来的，括号中是出现的词频。如果你的简历要投递给有机器（简历分选系统）和不如机器（不懂技术的HR）筛选简历环节的地方，请一定从下边高频关键词中选择5～10个适合你自己的。
-
-- java(364)
-- web(219)
-- mysql(186)
-- linux(159)
-- php(133)
-- oracle(109)
-- j2ee(109)
-- spring(101)
-- sql(95)
-- uml(83)
-- android(74)
-- javascript(68)
-- html(62)
-- css(59)
-- soa(57)
-- ajax(57)
-- hadoop(54)
-- hibernate(54)
-- ios(50)
-- nosql(48)
-- mvc(47)
-- jquery(47)
-- struts(46)
-- tomcat(44)
-- python(42)
-- xml(39)
-- ibatis(38)
-- redis(38)
-- tcp(36)
-- unix(36)
-- oop(35)
-- html5(34)
-- jboss(29)
-- hbase(28)
-- js(28)
-- rose(28)
-- websphere(25)
-- sqlserver(25)
-- memcached(24)
-- mongodb(24)
-- json(23)
-- shell(22)
-- nginx(22)
-- crm(22)
-- weblogic(22)
-- apache(19)
-- webservice(19)
-- jsp(18)
-- erp(18)
-- ooa(17)
-- memcache(16)
-- javaee(15)
-- lucene(14)
-- windows(14)
-- ssh(13)
-- saas(13)
-- powerdesigner(13)
-- bi(13)
-- aop(12)
-- mq(12)
-- cache(12)
-- asp(12)
-- service(12)
-- struts2(12)
-- jvm(12)
-- hive(12)
-- lamp(12)
-- framework(12)
-- mybatis(11)
-- db2(11)
-- review(11)
-- css3(11)
-- openstack(11)
-- servlet(10)
-- ejb(10)
-- amp(10)
-- rational(10)
-- socket(10)
-- oo(9)
-- jms(9)
-- b2c(9)
-- o2o(9)
-- svn(9)
-- lnmp(8)
-- jdbc(8)
-- div(8)
-- springmvc(8)
-- mapreduce(8)
-- xhtml(8)
-- junit(8)
-- esb(8)
-- db(8)
-- eclipse(8)
-- api(8)
-- ext(8)
-- cms(7)
-- netty(7)
-- jetty(7)
-- ioc(7)
-- orm(7)
-- ui(7)
-- yui(6)
-- mina(6)
-- osgi(6)
-- activemq(6)
-- ruby(6)
-- visio(6)
-- node(6)
-- vmware(6)
-- pc(6)
-- yii(5)
-- maven(5)
-
-
-
 
 
 ---
