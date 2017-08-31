@@ -100,7 +100,7 @@
 
 ## 开源项目
 
- - [STU](http://github.com/wbsljh/projectname)：项目的简要说明，Star和Fork数多的可以注明
+ - [jeesite-parent](https://github.com/wbsljh/jeesite-parent)：基于Jeesite框架，将模块按照工程进行拆分， 便于分布式部署
 
 # 技能清单
 
