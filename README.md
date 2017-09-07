@@ -47,7 +47,8 @@
 - 技术架构
 
 > 后端：python flask sqlalchemy numpy pandas
-前端: es6 reactjs
+
+> 前端: es6 reactjs
 
 经过2个月时间完成了平台第一个版本开发， 并在公司内部多个项目投入生产使用， 基本上涉及到图表展示或者报表展示需求都能满足。 
 
@@ -60,7 +61,8 @@
 负责数据服务发布流程开发， 该模块涉及比较复杂的界面交付， 为项目引入了Vue.js
 
 > 前端: Vue.js
-后端: Spring、Dubbo、Mybatis
+
+> 后端: Spring、Dubbo、Mybatis
 
 
 ## 圈子里网络科技有限公司 架构师（ 2015年12月 ~ 2016年8月 ）
